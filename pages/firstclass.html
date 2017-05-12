@@ -29,14 +29,11 @@
                 height: 500px;
                 background: url('../images/bagswitch2.jpg');  
 }
+    body{
+        float: center;
+    }
 </style>
     
-<script>
-  function play(){
-       var audio = document.getElementById("Mr. Graffio");
-       audio.play();
-                 }
-</script>
     
  <body>
 <audio controls:none loop autoplay>
@@ -45,18 +42,25 @@
 <div class="no cell phones">
     <img src="../images/No%20Cell%20phones.jpg" width="500"> 
     <img src="../dialogue/Mr.%20Graffio.png" width="300" value="PLAY"  onclick="play()">
-<audio id="Mr. Graffio" src="../audio/First%2520Class/No%20Cellphone%20teacher%20altered.wav" ></audio>>>
+  <audio controls>
+  <source src="../audio/No%20Cellphone%20teacher%20altered.wav" type="audio/mpeg">
+</audio>
 </div>
      
 <div class="phone away">
     <img src="../dialogue/Bex-Thought-1.png" width="300">
+     <audio controls>
+  <source src="../audio/Bex%20talk%201.wav" type="audio/mpeg">
+</audio>
     <div class="switchimagephone"></div>
-<!--    <img src="../images/put%20away%20phone%201.jpg" width="500">-->
     
 </div>  
    <div class="phone trance">
     <img src="../images/Class%20phone%20trance.jpg" width="500">
     <img src="../dialogue/Bex-Thought-2.png" width="300">
+        <audio controls>
+  <source src="../audio/Bex%20Talk%202.wav" type="audio/mpeg">
+</audio>
 </div>
      
 <div class="look exchange">
@@ -70,11 +74,17 @@
 <div class="backpack on">
     <div class="switchimagebag"></div>
     <img src="../dialogue/CYM%201.png" width="300">
+     <audio controls>
+  <source src="../audio/CYM%20part%201.mp3" type="audio/mpeg">
+</audio>
 </div>
      
 <div class="finger ear">
     <img src="../dialogue/Bex-Thought-3.png" width="300">
     <img src="../images/Finger%20Ear.jpg" width="500">
+     <audio controls>
+  <source src="../audio/Bex%20Talk%203.wav" type="audio/mpeg">
+</audio>
 </div>
      <p><a href="Hallway.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
      <p><a href="../index.html"><img src="../images/arrow%20backward.png"  width="50"></a></p>
