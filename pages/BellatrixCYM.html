@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>animated typing</title>
+    <style>
+    .typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+    </style>
+<script src="js/typed.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.element', {
+          //^1000 creates a delay in the typing, builds drama or makes it seem like the program is thinking.
+        strings: ["You, Bellatrix,^1000 are distressed about being an outsider in your school. ^2000", "Since the start of high school, you have been singled out, ^1000 Bullied and mistreated.^2000", "If you let me help you,^1000 I will help you to socialize with your peers,^1000 and keep these things from happening to  you ever again."],
+        typeSpeed: 0
+          
+      });
+  });
+    
+</script>
+</head>
+<body>
+<span class="element"></span>
+    <p><a href="ComputerLab.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>animated typing</title>
+    <style>
+    .typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+    </style>
+<script src="js/typed.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.element', {
+          //^1000 creates a delay in the typing, builds drama or makes it seem like the program is thinking.
+        strings: ["Jenna desires weight loss and ^1000 increase in skill ^500 in her dance abilities...^2000", "She feels pressured by her mother;^1000 and improving will achieve peace in her household.^2000", "With my help, Jenna will become ^1000 the best dancer on her team."],
+        typeSpeed: 0
+          
+      });
+  });
+    
+</script>
+</head>
+<body>
+<span class="element"></span>
+    <p><a href="EricCYM.HTML"><img src="../images/arrow%20forward.png"  width="50"></a></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

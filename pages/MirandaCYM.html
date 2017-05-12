@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>animated typing</title>
+    <style>
+    .typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+    </style>
+<script src="js/typed.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.element', {
+          //^1000 creates a delay in the typing, builds drama or makes it seem like the program is thinking.
+        strings: ["Miranda wants to overcome her stagefright,^1000 for the sake of her band 5 Star Storm ^2000", "She’s been too afraid to play in front of crowds, ^1000which kept her from playing Open Forum Fridays.^2000", "I will help her overcome that fear,^1000 so nothing can stop her from reaching for her dream, to take 5 Star Storm as far as she can."],
+        typeSpeed: 0
+          
+      });
+  });
+    
+</script>
+</head>
+<body>
+<span class="element"></span>
+    <p><a href="BellatrixCYM.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
+</body>
+</html>
