@@ -36,31 +36,29 @@
     
     
  <body>
+     
 <audio controls:none loop autoplay>
   <source src="../music/First%20Class%20Background.mp3" type="audio/mpeg">
 </audio>
 <div class="no cell phones">
     <img src="../images/No%20Cell%20phones.jpg" width="500"> 
-    <img src="../dialogue/Mr.%20Graffio.png" width="300" value="PLAY"  onclick="play()">
-  <audio controls>
-  <source src="../audio/No%20Cellphone%20teacher%20altered.wav" type="audio/mpeg">
-</audio>
+    <input type="image" src="../dialogue/Mr.%20Graffio.png" width="300" onclick="play1()">
+    <audio id="audio1" src="../audio/No%20Cellphone%20teacher%20altered.wav" ></audio>
+
 </div>
      
 <div class="phone away">
-    <img src="../dialogue/Bex-Thought-1.png" width="300">
-     <audio controls>
-  <source src="../audio/Bex%20talk%201.wav" type="audio/mpeg">
-</audio>
+   
+<input type="image" src="../dialogue/Bex-Thought-1.png" width="300" onclick="play2()">
+<audio id="audio2" src="../audio/Bex%20talk%201.wav" ></audio>
     <div class="switchimagephone"></div>
     
 </div>  
    <div class="phone trance">
     <img src="../images/Class%20phone%20trance.jpg" width="500">
-    <img src="../dialogue/Bex-Thought-2.png" width="300">
-        <audio controls>
-  <source src="../audio/Bex%20Talk%202.wav" type="audio/mpeg">
-</audio>
+ <input type="image" src="../dialogue/Bex-Thought-2.png" width="300" onclick="play3()">
+<audio id="audio3" src="../audio/Bex%20Talk%202.wav" ></audio>
+        
 </div>
      
 <div class="look exchange">
@@ -73,22 +71,47 @@
      
 <div class="backpack on">
     <div class="switchimagebag"></div>
-    <img src="../dialogue/CYM%201.png" width="300">
-     <audio controls>
-  <source src="../audio/CYM%20part%201.mp3" type="audio/mpeg">
-</audio>
+  <input type="image" src="../dialogue/CYM%201.png" width="300" onclick="play4()">
+<audio id="audio4" src="../audio/CYM%20part%201.mp3" ></audio>  
+ 
 </div>
      
 <div class="finger ear">
-    <img src="../dialogue/Bex-Thought-3.png" width="300">
+    <input type="image" src="../dialogue/Bex-Thought-3.png" width="300" onclick="play5()">
+<audio id="audio5" src="../audio/Bex%20Talk%203.wav" ></audio>  
     <img src="../images/Finger%20Ear.jpg" width="500">
-     <audio controls>
-  <source src="../audio/Bex%20Talk%203.wav" type="audio/mpeg">
-</audio>
+    
 </div>
      <p><a href="Hallway.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
      <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
 </body>
 </html>
+
+<script>
+ function play1(){
+       var audio = document.getElementById("audio1");
+       audio.play();
+                 }
+
+ function play2(){
+       var audio = document.getElementById("audio2");
+       audio.play();
+                 }   
+    
+ function play3(){
+       var audio = document.getElementById("audio3");
+       audio.play();
+                 }    
+
+function play4(){
+       var audio = document.getElementById("audio4");
+       audio.play();
+                 }        
+
+function play5(){
+       var audio = document.getElementById("audio5");
+       audio.play();
+                 }     
+</script>
 
 <body>

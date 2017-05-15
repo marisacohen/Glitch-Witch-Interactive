@@ -8,6 +8,18 @@
     body {
      background-color: black;
     }
+    
+    div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+    
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
     .switchimageGYM {
                 width: 500px; 
                 height: 400px;
@@ -29,97 +41,82 @@
                 height: 400px;
                 background: url('../images/switchQcloset2.jpg');  
     }   
+    
 </style>
  <body>
 <audio controls:none loop autoplay>
   <source src="../music/Hallway%20Background.mp3" type="audio/mpeg">
 </audio>
 <div class="Hall walk">
-    <img src="../dialogue/CYM%202.png" width="300">
-     <audio controls>
-  <source src="../audio/CYM%20part%202.mp3" type="audio/mpeg">
-</audio>
-    <img src="../dialogue/Bex-Thought-4.png" width="300">
-     <audio controls>
-  <source src="../audio/Bex%20Talk%204.wav" type="audio/mpeg">
-</audio>
-    <img src="../images/Hall%20walk.jpg" width="500">
+    <input type="image" src="../dialogue/CYM%202.png" width="300" onclick="play1()">
+<audio id="audio1" src="../audio/CYM%20part%202.mp3" ></audio>
+    
+     <input type="image" src="../dialogue/Bex-Thought-4.png" width="300" onclick="play2()">
+<audio id="audio2" src="../audio/Bex%20Talk%204.wav" ></audio>
+     
+    <img src="../images/Hall%20walk.jpg" height="500">
 </div>
      
 <div class="lunchroom">
-    <img src="../dialogue/CYM%203.png" width="300">
-    <audio controls>
-  <source src="../audio/CYM%20part%203.mp3" type="audio/mpeg">
-</audio>
+
+    <input type="image" src="../dialogue/CYM%203.png" width="300" onclick="play3()">
+<audio id="audio3" src="../audio/CYM%20part%203.mp3" ></audio>
+    
     <div class="switchimageGYM"></div>
     
 </div>  
      
 <div class="Confused Bex">
-    <img src="../dialogue/Bex-Thought-5.png" width="300">
-     <audio controls>
-  <source src="../audio/Bex%20Talk%205.wav" type="audio/mpeg">
-</audio>
-    <img src="../images/Confused%20Bex.jpg" width="500">
+    <input type="image" src="../dialogue/Bex-Thought-5.png" width="300" onclick="play4()">
+<audio id="audio4" src="../audio/Bex%20Talk%205.wav" ></audio>
+    <img src="../images/Confused%20Bex.jpg" height="500">
 </div>
      
 <div class="Run Away Bex">
-    <img src="../dialogue/CYM%204.png" width="300">
-     <audio controls>
-  <source src="../audio/CYM%20part%204.mp3" type="audio/mpeg">
-</audio>
-    <img src="../images/Run%20Away%20Bex.jpg" width="500">
+    <input type="image" src="../dialogue/CYM%204.png" width="300" onclick="play5()">
+<audio id="audio5" src="../audio/CYM%20part%204.mp3" ></audio>
+    
+    <img src="../images/Run%20Away%20Bex.jpg" height="500">
 </div>     
      
 <div class="Eric Shirt Grab">
-    <img src="../dialogue/Bex-Talk-1.png" width="300">
-     <audio controls>
-  <source src="../audio/Bex%20Talk%206.wav" type="audio/mpeg">
-</audio>
-    <img src="../images/Eric%20Shirt%20Grab.jpg" width="500">
+     <input type="image" src="../dialogue/Bex-Talk-1.png" width="300" onclick="play6()">
+<audio id="audio6" src="../audio/Bex%20Talk%206.wav" ></audio>
+ 
 </div>
      
 <div class="Eric blank face">
-    <img src="../images/Eric%20blank%20face.jpg" width="500">
-     <audio controls>
-  <source src="../audio/Eric%20Brave%20Enough.mp3" type="audio/mpeg">
-</audio>
-    <img src="../dialogue/Eric%20Talk%201.png" width="300">
+    <img src="../images/Eric%20blank%20face.jpg" height="500">
+     <input type="image" src="../dialogue/Eric%20Talk%201.png" width="300" onclick="play7()">
+<audio id="audio7" src="../audio/Eric%20Brave%20Enough.mp3" ></audio>
+     
 </div>
      
 <div class="Miranda locker wave">
-    <img src="../dialogue/Bex-Talk-2.png" width="300">
-     <audio controls>
-  <source src="../audio/Bex%20Talk%207.wav" type="audio/mpeg">
-</audio>
-    <img src="../images/Miranda%20locker%20wave.jpg" width="500">
-    <img src="../dialogue/Miranda%20Talk.png" width="300">
-     <audio controls>
-  <source src="../audio/Miranda.wav" type="audio/mpeg">
-</audio>
+    <input type="image" src="../dialogue/Bex-Talk-2.png" width="300" onclick="play8()">
+<audio id="audio8" src="../audio/Bex%20Talk%207.wav" ></audio>
+    <img src="../images/Miranda%20locker%20wave.jpg" height="500">
+    <input type="image" src="../dialogue/Miranda%20Talk.png" width="300" onclick="play9()">
+<audio id="audio9" src="../audio/Miranda.wav" ></audio>
+    
 </div>
      
 <div class="Jenna Dancing Hall">
-    <img src="../images/Jenna%20Dancing%20Hall.jpg" width="500">
-    <img src="../dialogue/Jenna%20Talk%201.png" width="300">
-     <audio controls>
-  <source src="../audio/Jenna%20loose%20weight.mp3" type="audio/mpeg">
-</audio>
+    <img src="../images/Jenna%20Dancing%20Hall.jpg" height="500">
+     <input type="image" src="../dialogue/Jenna%20Talk%201.png" width="300" onclick="play10()">
+<audio id="audio10" src="../audio/Jenna%20loose%20weight.mp3" ></audio>
+     
 </div>
      
 <div class="Bex Hall freaked">
-    <img src="../dialogue/Bex-Talk-3.png" width="300">
-     <audio controls>
-  <source src="../audio/Bex%20Talk%208.wav" type="audio/mpeg">
-</audio>
-    <img src="../images/Bex%20Hall%20freaked.jpg" width="500">
+     <input type="image" src="../dialogue/Bex-Talk-3.png" width="300" onclick="play11()">
+<audio id="audio11" src="../audio/Bex%20Talk%208.wav" ></audio>
+    <img src="../images/Bex%20Hall%20freaked.jpg" height="500">
 </div>
      
 <div class="Bex spots Q">
-    <img src="../dialogue/CYM%205.png" width="300">
-     <audio controls>
-  <source src="../audio/CYM%20part%205.mp3" type="audio/mpeg">
-</audio>
+    <input type="image" src="../dialogue/CYM%205.png" width="300" onclick="play12()">
+<audio id="audio12" src="../audio/CYM%20part%205.mp3" ></audio>
     <div class="switchimageQcloset"></div>
 </div>
      
@@ -127,3 +124,65 @@
      <p><a href="firstclass.html"><img src="../images/arrow%20backward.png"  width="50"></a></p>
 </body>
 </html>
+
+<script>
+ function play1(){
+       var audio = document.getElementById("audio1");
+       audio.play();
+                 }
+
+ function play2(){
+       var audio = document.getElementById("audio2");
+       audio.play();
+                 }   
+    
+ function play3(){
+       var audio = document.getElementById("audio3");
+       audio.play();
+                 }    
+
+function play4(){
+       var audio = document.getElementById("audio4");
+       audio.play();
+                 }        
+
+function play5(){
+       var audio = document.getElementById("audio5");
+       audio.play();
+                 }   
+
+function play6(){
+       var audio = document.getElementById("audio6");
+       audio.play();
+                 }   
+    
+ function play7(){
+       var audio = document.getElementById("audio7");
+       audio.play();
+                 }    
+
+function play8(){
+       var audio = document.getElementById("audio8");
+       audio.play();
+                 }        
+
+function play9(){
+       var audio = document.getElementById("audio9");
+       audio.play();
+                 }  
+    
+ function play10(){
+       var audio = document.getElementById("audio10");
+       audio.play();
+                 }    
+
+function play11(){
+       var audio = document.getElementById("audio11");
+       audio.play();
+                 }        
+
+function play12(){
+       var audio = document.getElementById("audio12");
+       audio.play();
+                 }     
+</script>

@@ -19,36 +19,57 @@
      
 <div class="Q tap Bex">
     <img src="../images/Q%20tap%20Bex.jpg" width="500">
-    <img src="../dialogue/Q%20talk%206.png" width="300">
-    <audio controls>
-  <source src="../audio/Q%20wow%20so%20different.mp3" type="audio/mpeg">
-</audio>
+   
+     <input type="image" src="../dialogue/Q%20talk%206.png" width="300" onclick="play1()">
+    <audio id="audio1" src="../audio/Q%20wow%20so%20different.mp3" ></audio>
+    
 </div>  
      
 <div class="Bex Smirk before drumming">
     <img src="../images/Bex%20Smirk%20before%20drumming.jpg" width="500">
-    <img src="../dialogue/CYM%2012.png" width="300">
-    <audio controls>
-  <source src="../audio/CYM%20part%2012.mp3" type="audio/mpeg">
-</audio>
+    <input type="image" src="../dialogue/CYM%2012.png" width="300" onclick="play2()">
+    <audio id="audio2" src="../audio/CYM%20part%2012.mp3" ></audio>
+    
 </div>
      
 <div class="Bex Drumming">
     <img src="../images/Bex%20Drumming.jpg" width="500">
-    <img src="../dialogue/CYM%2013.png" width="300">
-    <audio controls>
-  <source src="../audio/CYM%20part%2013.mp3" type="audio/mpeg">
-</audio>
+    <input type="image" src="../dialogue/CYM%2013.png" width="300" onclick="play3()">
+    <audio id="audio3" src="../audio/CYM%20part%2013.mp3" ></audio>
+    
 </div>
      
 <div class="Detention Free">
-    <img src="../dialogue/Bex-Talk-16.png" width="300">
-    <audio controls>
-  <source src="../audio/We're%20Free.wav" type="audio/mpeg">
-</audio>
+    <input type="image" src="../dialogue/Bex-Talk-16.png" width="300" onclick="play4()">
+    <audio id="audio4" src="../audio/We're%20Free.wav" ></audio>
+    
     <img src="../images/Detention%20Free.jpg" width="500">
 </div>     
      <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
      <p><a href="secondclass.html"><img src="../images/arrow%20backward.png"  width="50"></a></p> 
 </body>
 </html>
+
+<script>
+function play1(){
+       var audio = document.getElementById("audio1");
+       audio.play();
+                 }
+
+ function play2(){
+       var audio = document.getElementById("audio2");
+       audio.play();
+                 }   
+    
+ function play3(){
+       var audio = document.getElementById("audio3");
+       audio.play();
+                 }    
+
+function play4(){
+       var audio = document.getElementById("audio4");
+       audio.play();
+                 }        
+
+
+</script>
