@@ -58,29 +58,105 @@ a:hover, a:focus, a:active {
 /* Main content */
 .main {
     margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+        }
+        
+        * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: .075em;
 }
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}
+
     </style>
 <body>
     <audio controls:none loop autoplay>
     <source src="../music/Character%20Intros%20Background.mp3">
     </audio>
     <div>
-    <img src="../images/Jennapic.JPG" width="300">
-    <audio controls> 
-    <source src="../audio/Bex%20Intro%20Jenna.wav" type="audio/mpeg">
-    </audio>
-    <img src="../images/Ericpic.JPG" width="300">
-    <audio controls>
-    <source src="../audio/Bex%20Intro%20Eric.wav" type="audio/mpeg">
-    </audio>
-    <img src="../images/Mirandapic.JPG" width="300">
-     <audio controls>
-    <source src="../audio/Bex%20Intro%20Miranda.wav" type="audio/mpeg">
-    </audio>
-    <img src="../images/Qpic.JPG" width="300">
-     <audio controls>
-    <source src="../audio/Bex%20Intro%20Q.wav" type="audio/mpeg">
-    </audio>
+       
+            <div class="container">
+        <input type="image" src="../images/Jennapic.JPG" width="300" onclick="play1()" class="image">
+    <audio id="audio1" src="../audio/Bex%20Intro%20Jenna.wav" ></audio>
+        <div class="overlay1" onclick="play1()">
+            <div class="text">Jenna</div>
+            <audio id="audio1" src="../audio/Bex%20Intro%20Jenna.wav" ></audio>
+        </div> 
+            </div>
+    
+        
+        <div class="container">
+        <input type="image" src="../images/Ericpic.JPG" width="300" onclick="play2()" class="image">
+    <audio id="audio2" src="../audio/Bex%20Intro%20Eric.wav" ></audio>
+        <div class="overlay1" onclick="play2()">
+            <div class="text">Eric</div>
+            <audio id="audio2" src="../audio/Bex%20Intro%20Eric.wav" ></audio>
+        </div> 
+            </div>
+        
+
+    <div class="container">
+        <input type="image" src="../images/Mirandapic.JPG" width="300" onclick="play3()" class="image">
+    <audio id="audio3" src="../audio/Bex%20Intro%20Miranda.wav" ></audio>
+        <div class="overlay1" onclick="play3()">
+            <div class="text">Miranda</div>
+            <audio id="audio3" src="../audio/Bex%20Intro%20Miranda.wav" ></audio>
+        </div> 
+            </div>
+     
+      <div class="container">
+        <input type="image" src="../images/Qpic.JPG" width="300" onclick="play4()" class="image">
+    <audio id="audio4" src="../audio/Bex%20Intro%20Q.wav" ></audio>
+        <div class="overlay1" onclick="play4()">
+            <div class="text">Q</div>
+            <audio id="audio4" src="../audio/Bex%20Intro%20Q.wav" ></audio>
+        </div> 
+            </div>  
+    </div>
+    
+   <div class=band>
          <img src="../images/5%20Star%20Storm%20logo.png" width="100">
         </div>
    
@@ -90,3 +166,26 @@ a:hover, a:focus, a:active {
     </body>
     
 </html>
+
+<script>
+ function play1(){
+       var audio = document.getElementById("audio1");
+       audio.play();
+                 }
+
+ function play2(){
+       var audio = document.getElementById("audio2");
+       audio.play();
+                 }   
+    
+ function play3(){
+       var audio = document.getElementById("audio3");
+       audio.play();
+                 }    
+
+function play4(){
+       var audio = document.getElementById("audio4");
+       audio.play();
+                 }        
+  
+</script>
