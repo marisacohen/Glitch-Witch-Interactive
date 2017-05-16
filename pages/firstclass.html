@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="icon" type="image/gif" href="../images/GlitchWitchIcon.png" />
-    <title>Glitch Witch First Class</title>
+    <title>Glitch Witch</title>
 </head>
 <style>
     body {
@@ -32,10 +32,73 @@
     body{
         float: center;
     }
+      div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+    
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
+    
+    .navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-decoration: none; 
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}
+    
+  @-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+.navbar a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}     
+       
 </style>
     
     
- <body>
+ <body> 
      
 <audio controls:none loop autoplay>
   <source src="../music/First%20Class%20Background.mp3" type="audio/mpeg">
@@ -82,8 +145,18 @@
     <img src="../images/Finger%20Ear.jpg" width="500">
     
 </div>
-     <p><a href="Hallway.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
-     <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
+     <div class="navbar">
+    <p><a href="Hallway.html"><img src="../images/arrow%20forward.png"  width="50"></a></p> 
+    <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
+    <p><a href="firstclass.html">1</a></p>
+    <p><a href="Hallway.html">2</a></p>
+    <p><a href="Closet.html">3</a></p>
+    <p><a href="ComputerLab.html">4</a></p>
+    <p><a href="secondclass.html">5</a></p>
+    <p><a href="ending.html">6</a></p>
+    <p><a href="../index.html"><img src="../images/arrow%20backward.png"  width="50"></a></p>
+     
+</div>
 </body>
 </html>
 

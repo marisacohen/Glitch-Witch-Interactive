@@ -2,36 +2,91 @@
 <html>
 <head>
     <link rel="icon" type="image/gif" href="../images/GlitchWitchIcon.png" />
-    <title>Glitch Witch Homepage</title>
+    <title>Glitch Witch</title>
     </head>
     
     <style>
     body {
      background-color: black;
     }
+          div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+    
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
+        
+          a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+} 
+        .navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}
     </style>
 <body>
     <audio controls:none loop autoplay>
     <source src="../music/Character%20Intros%20Background.mp3">
     </audio>
-    <img src="../images/Jennapic.JPG" width="500">
+    <div>
+    <img src="../images/Jennapic.JPG" width="300">
     <audio controls> 
     <source src="../audio/Bex%20Intro%20Jenna.wav" type="audio/mpeg">
     </audio>
-    <img src="../images/Ericpic.JPG" width="500">
+    <img src="../images/Ericpic.JPG" width="300">
     <audio controls>
     <source src="../audio/Bex%20Intro%20Eric.wav" type="audio/mpeg">
     </audio>
-    <img src="../images/Mirandapic.JPG" width="500">
+    <img src="../images/Mirandapic.JPG" width="300">
      <audio controls>
     <source src="../audio/Bex%20Intro%20Miranda.wav" type="audio/mpeg">
     </audio>
-    <img src="../images/Qpic.JPG" width="500">
+    <img src="../images/Qpic.JPG" width="300">
      <audio controls>
     <source src="../audio/Bex%20Intro%20Q.wav" type="audio/mpeg">
     </audio>
-    <img src="../images/5%20Star%20Storm%20logo.png" width="100">
+         <img src="../images/5%20Star%20Storm%20logo.png" width="100">
+        </div>
+   
+    <div class=navbar>
     <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
+        </div>
     </body>
     
 </html>

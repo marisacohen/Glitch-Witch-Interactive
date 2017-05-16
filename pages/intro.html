@@ -2,24 +2,77 @@
 <html>
 <head>
     <link rel="icon" type="image/gif" href="../images/GlitchWitchIcon.png" />
-    <title>Glitch Witch Homepage</title>
+    <title>Glitch Witch</title>
     </head>
     
     <style>
     body {
      background-color: black;
     }
+          div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+    
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
+     .navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}   
+          a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+} 
     </style>
 <body>
-    <video  controls>
-        <source src="../video/Glitch%20Animated%20Logo.mp4" type="video/mp4"> </video>
+    <div>
+    <video width="500" height="350" controls>
+        <source src="../video/Glitch%20Animated%20Logo.mp4" type="video/mp4" > </video>
     <br/>
     <img src="../images/Marisa_Cohen_GlitchWitch1.jpg" width="500"> 
     <audio controls>
     <source src="../audio/Glitch%20Witch%20Intro.wav" type="audio/mpeg">
     </audio>
+   </div>     
+    <div class=navbar>
    <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
     <p><a href="intro2.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
+    </div>
 </body>
     
 </html>
