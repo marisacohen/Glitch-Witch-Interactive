@@ -90,81 +90,184 @@ margin: 0px auto;
   background-color: #2098d1;
   color: white;
 }  
+    
+    #hallwalk1 {
+    position: relative;
+    left: 0px;
+    top: 100px;
+    z-index: 10;
+}
+    
+    #hallwalk2 {
+    position: relative;
+   right: 150px;
+    top: 130px;
+    z-index: 10;
+}
+    
+     #lunchroom {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+}
+    
+     #confusedbex {
+    position: relative;
+    right: 300px;
+    top: 150px;
+    z-index: 10;
+} 
+    
+     #runawaybex {
+    position: relative;
+   right:0px;
+    top: 0px;
+    z-index: 10;
+    }
+    
+    #ericshirtgrab {
+    position: relative;
+    right: 430px;
+    top: 150px;
+    z-index: 10;
+}
+    
+    #ericblankface {
+    position: relative;
+   left: 60px;
+    bottom: 450px;
+    z-index: 10;
+}
+    
+     #mirandalockerwave1 {
+    position: relative;
+    right: 400px;
+    top: 120px;
+    z-index: 10;
+}
+    
+     #mirandalockerwave2 {
+    position: relative;
+    left: 250px;
+    bottom: 470px;
+    z-index: 10;
+} 
+    
+     #jennadancinghall {
+    position: relative;
+   left: 450px;
+    bottom: 420px;
+    z-index: 10;
+    }
+    
+       #bexhallfreaked {
+    position: relative;
+   right: 400px;
+    top: 50px;
+    z-index: 10;
+}
+    
+     #bexspotsQ {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+}
+    
 </style>
  <body>
 <audio controls:none loop autoplay>
   <source src="../music/Hallway%20Background.mp3" type="audio/mpeg">
 </audio>
 <div class="Hall walk">
+    <div id="hallwalk1">
     <input type="image" src="../dialogue/CYM%202.png" width="300" onclick="play1()">
 <audio id="audio1" src="../audio/CYM%20part%202.mp3" ></audio>
+    </div>
     
+    <div id="hallwalk2">
      <input type="image" src="../dialogue/Bex-Thought-4.png" width="300" onclick="play2()">
 <audio id="audio2" src="../audio/Bex%20Talk%204.wav" ></audio>
-     
+     </div>
+    
     <img src="../images/Hall%20walk.jpg" height="500">
 </div>
      
 <div class="lunchroom">
-
+    <div id="lunchroom">
     <input type="image" src="../dialogue/CYM%203.png" width="300" onclick="play3()">
 <audio id="audio3" src="../audio/CYM%20part%203.mp3" ></audio>
-    
+    </div>
     <div class="switchimageGYM"></div>
     
 </div>  
      
 <div class="Confused Bex">
+    <div id="confusedbex">
     <input type="image" src="../dialogue/Bex-Thought-5.png" width="300" onclick="play4()">
 <audio id="audio4" src="../audio/Bex%20Talk%205.wav" ></audio>
+       </div> 
     <img src="../images/Confused%20Bex.jpg" height="500">
 </div>
      
 <div class="Run Away Bex">
+    <div id="runawaybex">
     <input type="image" src="../dialogue/CYM%204.png" width="300" onclick="play5()">
 <audio id="audio5" src="../audio/CYM%20part%204.mp3" ></audio>
-    
+    </div>
     <img src="../images/Run%20Away%20Bex.jpg" height="500">
 </div>     
      
 <div class="Eric Shirt Grab">
+    <div id="ericshirtgrab">
      <input type="image" src="../dialogue/Bex-Talk-1.png" width="300" onclick="play6()">
 <audio id="audio6" src="../audio/Bex%20Talk%206.wav" ></audio>
- 
+    </div>
+    <img src="../images/Eric%20Shirt%20Grab.jpg" width="300">
 </div>
      
 <div class="Eric blank face">
     <img src="../images/Eric%20blank%20face.jpg" height="500">
+    <div id="ericblankface">
      <input type="image" src="../dialogue/Eric%20Talk%201.png" width="300" onclick="play7()">
 <audio id="audio7" src="../audio/Eric%20Brave%20Enough.mp3" ></audio>
-     
+     </div>
 </div>
      
 <div class="Miranda locker wave">
+    <div id="mirandalockerwave1">
     <input type="image" src="../dialogue/Bex-Talk-2.png" width="300" onclick="play8()">
 <audio id="audio8" src="../audio/Bex%20Talk%207.wav" ></audio>
+        </div>
     <img src="../images/Miranda%20locker%20wave.jpg" height="500">
+    <div id="mirandalockerwave2">
     <input type="image" src="../dialogue/Miranda%20Talk.png" width="300" onclick="play9()">
 <audio id="audio9" src="../audio/Miranda.wav" ></audio>
-    
+    </div>
 </div>
      
 <div class="Jenna Dancing Hall">
     <img src="../images/Jenna%20Dancing%20Hall.jpg" height="500">
+    <div id="jennadancinghall">
      <input type="image" src="../dialogue/Jenna%20Talk%201.png" width="300" onclick="play10()">
 <audio id="audio10" src="../audio/Jenna%20loose%20weight.mp3" ></audio>
-     
+     </div>
 </div>
      
 <div class="Bex Hall freaked">
+    <div id="bexhallfreaked">
      <input type="image" src="../dialogue/Bex-Talk-3.png" width="300" onclick="play11()">
 <audio id="audio11" src="../audio/Bex%20Talk%208.wav" ></audio>
+        </div>
     <img src="../images/Bex%20Hall%20freaked.jpg" height="500">
 </div>
      
 <div class="Bex spots Q">
+    <div id="bexspotsQ">
     <input type="image" src="../dialogue/CYM%205.png" width="300" onclick="play12()">
 <audio id="audio12" src="../audio/CYM%20part%205.mp3" ></audio>
+        </div>
     <div class="switchimageQcloset"></div>
 </div>
      <div class=navbar>

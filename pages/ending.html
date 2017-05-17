@@ -69,6 +69,35 @@ margin: 0px auto;
   background-color: #2098d1;
   color: white;
 }  
+    
+         #qtapbex {
+    position: relative;
+    left: 20px;
+    bottom: 750px;
+    z-index: 10;
+}
+    
+    #bexsmirkbeforedrumming {
+    position: relative;
+   left: 230px;
+    bottom: 420px;
+    z-index: 10;
+}
+    
+     #bexdrumming {
+    position: relative;
+    left: 200px;
+    bottom: 400px;
+    z-index: 10;
+}
+    
+     #detentionfree {
+    position: relative;
+    right: 400px;
+    top: 150px;
+    z-index: 10;
+} 
+    
 </style>
  <body>
 <audio controls:none loop autoplay>
@@ -80,30 +109,33 @@ margin: 0px auto;
      
 <div class="Q tap Bex">
     <img src="../images/Q%20tap%20Bex.jpg" width="500">
-   
+   <div id="qtapbex">
      <input type="image" src="../dialogue/Q%20talk%206.png" width="300" onclick="play1()">
     <audio id="audio1" src="../audio/Q%20wow%20so%20different.mp3" ></audio>
-    
+    </div>
 </div>  
      
 <div class="Bex Smirk before drumming">
     <img src="../images/Bex%20Smirk%20before%20drumming.jpg" width="500">
+    <div id="bexsmirkbeforedrumming">
     <input type="image" src="../dialogue/CYM%2012.png" width="300" onclick="play2()">
     <audio id="audio2" src="../audio/CYM%20part%2012.mp3" ></audio>
-    
+    </div>
 </div>
      
 <div class="Bex Drumming">
     <img src="../images/Bex%20Drumming.jpg" width="500">
+    <div id="bexdrumming">
     <input type="image" src="../dialogue/CYM%2013.png" width="300" onclick="play3()">
     <audio id="audio3" src="../audio/CYM%20part%2013.mp3" ></audio>
-    
+    </div>
 </div>
      
 <div class="Detention Free">
+    <div id="detentionfree">
     <input type="image" src="../dialogue/Bex-Talk-16.png" width="300" onclick="play4()">
     <audio id="audio4" src="../audio/We're%20Free.wav" ></audio>
-    
+     </div>
     <img src="../images/Detention%20Free.jpg" width="500">
 </div>     
     <div class=navbar>

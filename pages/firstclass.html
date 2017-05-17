@@ -93,7 +93,42 @@ margin: 0px auto;
   background-color: #2098d1;
   color: white;
 }     
-       
+  
+    #nocellphones {
+    position: relative;
+    left: 210px;
+    bottom: 400px;
+    z-index: 10;
+}
+    
+    #phoneaway {
+    position: relative;
+   right: 100px;
+    top: 40px;
+    z-index: 10;
+}
+    
+     #phonetrance {
+    position: relative;
+    left: 200px;
+    bottom: 400px;
+    z-index: 10;
+}
+    
+     #backpackon {
+    position: relative;
+    right: 280px;
+    bottom: 470px;
+    z-index: 10;
+} 
+    
+     #fingerear {
+    position: relative;
+   right: 120px;
+    top: 60px;
+    z-index: 10;
+    }
+         
 </style>
     
     
@@ -104,23 +139,29 @@ margin: 0px auto;
 </audio>
 <div class="no cell phones">
     <img src="../images/No%20Cell%20phones.jpg" width="500"> 
+    <div id="nocellphones">
     <input type="image" src="../dialogue/Mr.%20Graffio.png" width="300" onclick="play1()">
     <audio id="audio1" src="../audio/No%20Cellphone%20teacher%20altered.wav" ></audio>
-
+    </div>
+    
 </div>
      
 <div class="phone away">
-   
+     <div id="phoneaway">
 <input type="image" src="../dialogue/Bex-Thought-1.png" width="300" onclick="play2()">
 <audio id="audio2" src="../audio/Bex%20talk%201.wav" ></audio>
+    </div>
     <div class="switchimagephone"></div>
+    
     
 </div>  
    <div class="phone trance">
     <img src="../images/Class%20phone%20trance.jpg" width="500">
+       <div id="phonetrance">
  <input type="image" src="../dialogue/Bex-Thought-2.png" width="300" onclick="play3()">
 <audio id="audio3" src="../audio/Bex%20Talk%202.wav" ></audio>
-        
+        </div>
+       
 </div>
      
 <div class="look exchange">
@@ -133,14 +174,18 @@ margin: 0px auto;
      
 <div class="backpack on">
     <div class="switchimagebag"></div>
+    <div id="backpackon">
   <input type="image" src="../dialogue/CYM%201.png" width="300" onclick="play4()">
 <audio id="audio4" src="../audio/CYM%20part%201.mp3" ></audio>  
- 
+ </div>
+    
 </div>
      
 <div class="finger ear">
+    <div id="fingerear">
     <input type="image" src="../dialogue/Bex-Thought-3.png" width="300" onclick="play5()">
-<audio id="audio5" src="../audio/Bex%20Talk%203.wav" ></audio>  
+<audio id="audio5" src="../audio/Bex%20Talk%203.wav" ></audio> 
+    </div>
     <img src="../images/Finger%20Ear.jpg" width="500">
     
 </div>
