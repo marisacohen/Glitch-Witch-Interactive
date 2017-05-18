@@ -1,0 +1,153 @@
+ body {
+     background-color: black;
+/*     background black*/
+    }
+    
+/*center all divs*/
+      div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+/*    hover to switch images*/
+    .switchimageoutphone {
+                width: 250px; 
+                height: 350px;
+                background: url('../images/outphoneswitch1.jpg');   
+		}
+    .switchimageoutphone:hover {
+                width: 250px; 
+                height: 350px;
+        background: url('../images/outphoneswitch2.jpg'); 
+    } 
+  
+    
+    div talking {float: left}
+/*keep nav bar in place when scrolling*/
+   .navbar {
+    position: fixed; 
+    bottom: 0; 
+    width: 10%;
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; 
+}
+/*    animate button hover*/
+     @-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+.navbar a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}  
+/*relative positions of speech bubbles to go near person talking*/
+     #surprisedbexincloset1 {
+    position: relative;
+    right: 450px;
+    top: 150px;
+    z-index: 10;
+}
+    
+    #surprisedbexincloest2 {
+    position: relative;
+   left: 250px;
+    bottom: 520px;
+    z-index: 10;
+}
+    
+     #bexqclosetfirst1 {
+    position: relative;
+    left: 300px;
+    bottom: 350px;
+    z-index: 10;
+}
+    
+     #bexqclosetfirst2 {
+    position: relative;
+    left: 120px;
+    bottom: 530px;
+    z-index: 10;
+} 
+    
+     #closettakeoutphone {
+    position: relative;
+   right:250px;
+    top: 100px;
+    z-index: 10;
+    }
+    
+    #bexglitchmagicapp1 {
+    position: relative;
+    right: 400px;
+    top: 90px;
+    z-index: 10;
+}
+    
+    #bexglitchmagicapp2 {
+    position: relative;
+   left: 200px;
+    bottom: 300px;
+    z-index: 10;
+}
+    
+     #bexandqinclosetonbex1 {
+    position: relative;
+    right: 450px;
+    top: 100px;
+    z-index: 10;
+}
+    
+     #bexandqinclosetonbex2 {
+    position: relative;
+    left: 280px;
+    bottom: 380px;
+    z-index: 10;
+} 
+    
+     #bexandqinclosetonbex3 {
+    position: relative;
+   left: 350px;
+    bottom: 300px;
+    z-index: 10;
+    }
+    
+       #leavingclosetwithq {
+    position: relative;
+   right: 300px;
+    top: 200px;
+    z-index: 10;
+}

@@ -1,0 +1,172 @@
+  body {
+/*      background black*/
+     background-color: black;
+    }
+/*    center all divs*/
+    div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+    
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
+/*switch images on hover*/
+    .switchimageGYM {
+                width: 500px; 
+                height: 400px;
+                background: url('../images/switchlunch.jpg');   
+		}
+    .switchimageGYM:hover {
+                width: 500px; 
+                height: 400px;
+                background: url('../images/gymswitch.jpg');  
+}
+    
+ .switchimageQcloset {
+                width: 450px; 
+                height: 400px;
+                background: url('../images/switchQcloset1.jpg');   
+		}
+    .switchimageQcloset:hover {
+                width: 450px; 
+                height: 400px;
+                background: url('../images/switchQcloset2.jpg');  
+    } 
+/*keep nav bar in place while scrolling*/
+    .navbar {
+    position: fixed;
+    bottom: 0; 
+    width: 10%;
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; 
+}
+    /*    animate button hover*/
+     @-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+.navbar a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}  
+/*   relative positions of speech bubbles to go near person talking*/ 
+    #hallwalk1 {
+    position: relative;
+    left: 0px;
+    top: 100px;
+    z-index: 10;
+}
+    
+    #hallwalk2 {
+    position: relative;
+   right: 150px;
+    top: 130px;
+    z-index: 10;
+}
+    
+     #lunchroom {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+}
+    
+     #confusedbex {
+    position: relative;
+    right: 300px;
+    top: 150px;
+    z-index: 10;
+} 
+    
+     #runawaybex {
+    position: relative;
+   right:0px;
+    top: 0px;
+    z-index: 10;
+    }
+    
+    #ericshirtgrab {
+    position: relative;
+    right: 430px;
+    top: 150px;
+    z-index: 10;
+}
+    
+    #ericblankface {
+    position: relative;
+   left: 60px;
+    bottom: 450px;
+    z-index: 10;
+}
+    
+     #mirandalockerwave1 {
+    position: relative;
+    right: 400px;
+    top: 120px;
+    z-index: 10;
+}
+    
+     #mirandalockerwave2 {
+    position: relative;
+    left: 250px;
+    bottom: 470px;
+    z-index: 10;
+} 
+    
+     #jennadancinghall {
+    position: relative;
+   left: 450px;
+    bottom: 420px;
+    z-index: 10;
+    }
+    
+       #bexhallfreaked {
+    position: relative;
+   right: 400px;
+    top: 50px;
+    z-index: 10;
+}
+    
+     #bexspotsQ {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+}

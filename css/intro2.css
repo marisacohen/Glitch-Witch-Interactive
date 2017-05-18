@@ -1,0 +1,116 @@
+
+    body {
+/*        background black*/
+     background-color: black;
+    }
+
+/*center all divs*/
+          div{
+    width: 40%;
+display:block;
+margin: 5px auto;
+ 
+    }
+    
+/*font color and size*/
+        p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+            color: #e81be4;
+        }
+        
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
+        
+/*button hover animation*/
+          a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+} 
+/*keep navbar fixed on scroll*/
+        .navbar {
+    position: fixed; 
+    bottom: 0; 
+    width: 10%; 
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; 
+        }
+/*   when hovered, overlay appears     */
+        * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: .075em;
+}
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*overlay text*/
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay1 {
+  opacity: 1;
+}

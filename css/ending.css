@@ -1,0 +1,92 @@
+    body {
+     background-color: black;
+    }
+      div{
+    width: 40%;
+display:block;
+margin: 0px auto;
+ 
+    }
+    
+    div image{
+        vertical-align: top;
+        float: top; 
+    }
+    
+    .navbar {
+    position: fixed; 
+    bottom: 0; 
+    width: 10%;
+}
+
+/* Main content */
+.main {
+    margin-bottom: 30px; 
+}
+    /*    animate button hover*/
+     @-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+.navbar a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+     text-decoration: none;
+}
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}  
+/*    relative positions of speech bubbles to go near person talking*/*/
+         #qtapbex {
+    position: relative;
+    left: 20px;
+    bottom: 750px;
+    z-index: 10;
+}
+    
+    #bexsmirkbeforedrumming {
+    position: relative;
+   left: 230px;
+    bottom: 420px;
+    z-index: 10;
+}
+    
+     #bexdrumming {
+    position: relative;
+    left: 200px;
+    bottom: 400px;
+    z-index: 10;
+}
+    
+     #detentionfree {
+    position: relative;
+    right: 400px;
+    top: 150px;
+    z-index: 10;
+} 
