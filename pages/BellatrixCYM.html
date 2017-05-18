@@ -4,7 +4,10 @@
      <link rel="icon" type="image/gif" href="../images/GlitchWitchIcon.png" />
     <title>CYM's Bellatrix Program</title>
     <style>
-    .typed-cursor{
+/*        being slightly lazy here by putting the CSS on this page...but I view this as an easter egg page anyway*/
+   
+/*        creates blinking curser*/
+        .typed-cursor{
 	opacity: 1;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
@@ -24,7 +27,8 @@
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
-    
+   
+/*    creates button format and its hover animation*/
     a {
   display: inline-block;
   vertical-align: middle;
@@ -54,8 +58,10 @@ a:hover, a:focus, a:active {
   color: white;
 } 
     </style>
+<!--    leads to found js document which creates appearence of automatic typing-->
 <script src="js/typed.js"></script>
 <script>
+//    dictates what words the js will type (and where it pauses or starts over)
   document.addEventListener('DOMContentLoaded', function(){
       Typed.new('.element', {
           //^1000 creates a delay in the typing, builds drama or makes it seem like the program is thinking.
@@ -68,6 +74,7 @@ a:hover, a:focus, a:active {
 </script>
 </head>
 <body>
+<!--    this is the place where I tell the js writing to  be placed on the page-->
 <span class="element"></span>
     <p><a href="ComputerLab.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
 </body>

@@ -1,115 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--    includes witch icon with title-->
     <link rel="icon" type="image/gif" href="../images/GlitchWitchIcon.png" />
     <title>Glitch Witch</title>
+    <link rel="stylesheet" type="text/css" href="../css/ending.css"> 
 </head>
-<style>
-    body {
-     background-color: black;
-    }
-      div{
-    width: 40%;
-display:block;
-margin: 0px auto;
- 
-    }
-    
-    div image{
-        vertical-align: top;
-        float: top; 
-    }
-    
-    .navbar {
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar at the top of the page */
-    width: 10%;
-}
 
-/* Main content */
-.main {
-    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
-}
-    
-     @-webkit-keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba(32, 152, 209, 0.75);
-  }
-}
-@keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba(32, 152, 209, 0.75);
-  }
-}
-.navbar a {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-     text-decoration: none;
-}
-.navbar a:hover, .navbar a:focus, .navbar a:active {
-  -webkit-animation-name: hvr-back-pulse;
-  animation-name: hvr-back-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-color: #2098D1;
-  background-color: #2098d1;
-  color: white;
-}  
-    
-         #qtapbex {
-    position: relative;
-    left: 20px;
-    bottom: 750px;
-    z-index: 10;
-}
-    
-    #bexsmirkbeforedrumming {
-    position: relative;
-   left: 230px;
-    bottom: 420px;
-    z-index: 10;
-}
-    
-     #bexdrumming {
-    position: relative;
-    left: 200px;
-    bottom: 400px;
-    z-index: 10;
-}
-    
-     #detentionfree {
-    position: relative;
-    right: 400px;
-    top: 150px;
-    z-index: 10;
-} 
-    
-</style>
  <body>
+     <!--     background music, no controls, loop-->
 <audio controls:none loop autoplay>
   <source src="../music/Second%20Class%20Rock%20Backround.mp3" type="audio/mpeg">
      </audio>
+     <!--     each div represents one picture, and its related sounds and speech bubbles-->
 <div class="Miranda Class rock">
     <img src="../images/Miranda%20Class%20rock.jpg" width="500">
 </div>
      
 <div class="Q tap Bex">
     <img src="../images/Q%20tap%20Bex.jpg" width="500">
+    <!--    div ids within these div classes exsist to help reposition the speech bubbles to the right places-->
    <div id="qtapbex">
+       <!--        onclick used to reference js at the bottom, to make speech bubbles clickable, to play the audio referenced in the following line-->
      <input type="image" src="../dialogue/Q%20talk%206.png" width="300" onclick="play1()">
     <audio id="audio1" src="../audio/Q%20wow%20so%20different.mp3" ></audio>
     </div>
@@ -138,6 +50,7 @@ margin: 0px auto;
      </div>
     <img src="../images/Detention%20Free.jpg" width="500">
 </div>     
+     <!--     side nav bar to all other story pages and home-->
     <div class=navbar>
      <p><a href="../index.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
      <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
@@ -147,11 +60,11 @@ margin: 0px auto;
     <p><a href="ComputerLab.html">4</a></p>
     <p><a href="secondclass.html">5</a></p>
     <p><a href="ending.html">6</a></p>
-     <p><a href="secondclass.html"><img src="../images/arrow%20backward.png"  width="50"></a></p> 
+    <p><a href="secondclass.html"><img src="../images/arrow%20backward.png"  width="50"></a></p> 
      </div>
 </body>
 </html>
-
+<!--this script allows speech bubbles to play their specific audio when clicked-->
 <script>
 function play1(){
        var audio = document.getElementById("audio1");

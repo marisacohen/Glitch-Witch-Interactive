@@ -2,81 +2,10 @@
 <html>
 <head>
 <title>CYM</title>    
+ <link rel="stylesheet" type="text/css" href="../css/interactiveCYM.css">
+
 </head>
-<style>
-body {
-  background: black;
-  color: #e81be4;
-}
-#wrapper {
-  width: 600px;
-  margin: 80px auto;
-  text-align: center;
-}
-p, input, button {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
-}
-#answerContainer {
-  opacity: 0;
-}
-p {
-  padding: 20px 0;
-}
-input {
-  width: 500px;
-  padding: 5px 15px;
-  background: #c8e2f5;
-  border: 2px solid #ddd;
-  outline: none;
-}
-input:focus {
-  border: 2px solid #888;
-}
-button {
-  background: #78fea5;
-  color: #666;
-  border: 2px solid #666;
-  border-radius: 8px;
-  margin-left: 10px;
-  padding: 5px 15px;
-  outline: none;
-}
-button:hover {
-  background: #b713b0;
-  color: #222;
-  border: 2px solid #222;
-  cursor: pointer;
-}
-      a {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-     text-decoration: none;
-}
-a:hover, a:focus, a:active {
-  -webkit-animation-name: hvr-back-pulse;
-  animation-name: hvr-back-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-color: #2098D1;
-  background-color: #2098d1;
-  color: white;
-} 
-</style>
+
 <script>
 window.onload = function () {
   var answers = [

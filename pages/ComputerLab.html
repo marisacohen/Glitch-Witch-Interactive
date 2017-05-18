@@ -1,132 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--    includes witch icon with title-->
     <link rel="icon" type="image/gif" href="../images/GlitchWitchIcon.png" />
     <title>Glitch Witch</title>
-</head>
-<style>
-    body {
-     background-color: black;
-    }
-      div{
-    width: 40%;
-display:block;
-margin: 0px auto;
- 
-    }
-    
-    div image{
-        vertical-align: top;
-        float: top; 
-    }
-    
-    .navbar {
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar at the top of the page */
-    width: 10%;
-}
+    <link rel="stylesheet" type="text/css" href="../css/computerlab.css">
 
-/* Main content */
-.main {
-    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
-}
-    
-     @-webkit-keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba(32, 152, 209, 0.75);
-  }
-}
-@keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba(32, 152, 209, 0.75);
-  }
-}
-.navbar a {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-     text-decoration: none;
-}
-.navbar a:hover, .navbar a:focus, .navbar a:active {
-  -webkit-animation-name: hvr-back-pulse;
-  animation-name: hvr-back-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-color: #2098D1;
-  background-color: #2098d1;
-  color: white;
-}  
-      #computerlabdlongshot1 {
-    position: relative;
-    right: 400px;
-    top: 150px;
-    z-index: 10;
-}
-    
-    #computerlabdlongshot2 {
-    position: relative;
-   left: 200px;
-    bottom: 220px;
-    z-index: 10;
-}
-    
-     #bexandcomputerscreen1 {
-    position: relative;
-    right: 450px;
-    top: 200px;
-    z-index: 10;
-}
-    
-     #bexandcomputerscreen2 {
-    position: relative;
-    left: 280px;
-    top: 250px;
-    z-index: 10;
-} 
-    
-     #bextyping1 {
-    position: relative;
-   left:90px;
-    bottom: 490px;
-    z-index: 10;
-    }
-    
-    #bextyping2 {
-    position: relative;
-    right: 450px;
-    bottom: 500px;
-    z-index: 10;
-}
-    
-    #qandbexmakeaplan1 {
-    position: relative;
-   right: 300px;
-    top: 0px;
-    z-index: 10;
-}
-  
-    
-</style>
+</head>
+
  <body>
+     <!--     background music, no controls, loop-->
 <audio controls:none loop autoplay>
   <source src="../music/Computer%20Lab%20Background.mp3" type="audio/mpeg">
 </audio>
-     
+     <!--     each div represents one picture, and its related sounds and speech bubbles-->
 <div class="computer lab long shot">
+    <!--    div ids within these div classes exsist to help reposition the speech bubbles to the right places-->
     <div id="computerlabdlongshot1">
+        <!--        onclick used to reference js at the bottom, to make speech bubbles clickable, to play the audio referenced in the following line-->
      <input type="image" src="../dialogue/Bex-Talk-12.png" width="300" onclick="play1()">
     <audio id="audio1" src="../audio/Bex%20Talk%2019.wav" ></audio>
     </div>
@@ -176,6 +67,7 @@ margin: 0px auto;
     <audio id="audio8" src="../audio/CYM%20part%2011.mp3" ></audio>
     </div>
 </div>   
+     <!--     side nav bar to all other story pages and home-->
      <div class=navbar>
      <p><a href="secondclass.html"><img src="../images/arrow%20forward.png"  width="50"></a></p>
      <p><a href="../index.html"><img src="../images/GlitchWitchIcon.png"  width="50"></a></p>
@@ -189,7 +81,7 @@ margin: 0px auto;
      </div>
 </body>
 </html>
-
+<!--this script allows speech bubbles to play their specific audio when clicked-->
 <script>
  function play1(){
        var audio = document.getElementById("audio1");
