@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="icon" type="image/gif" href="images/GlitchWitchIcon.png" />
-    <title>Glitch Witch</title>
+    <head>
+        <link rel=icon type="image/gif" href="images/icons/GlitchWitchIcon.png" />
+        <title>Glitch Witch</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-<style>
-   body {
-    background-image: url("images/Marisa_Cohen_GlitchWitch2.jpg");
-    background-size: 1200px;
-    background-repeat: no-repeat;
-    background-position: Left;
-    background-attachment: fixed;
-    background-color: black;
-    }
-    
-    .nav {
-        float: right
-    }
-    .nav a {
-        display: inline-block;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-    }
-    
-    .nav a:hover, .nav a:focus .nav a:active{
-        float: right
-       -webkit-transform: scale(1.1) rotate(4deg);
-  transform: scale(1.1) rotate(4deg);
-    }       
-       
-</style>
-<body>
-    <div class="nav">
-    <p><a href="pages/intro.html"><img src="images/Intro%20Button.png"  width="300"></a></p>
-    <p><a href="pages/instructions.html"><img src="images/Instructions%20button.png"  width="300"></a></p>
-    <p><a href="pages/firstclass.html"><img src="images/Start%20Story%20button.png"  width="300"></a></p>
-    <p><a href="pages/interactiveCYM.html"><img src="images/CYM%20button.png"  width="300"></a></p>
-    </div>
-<audio controls:none loop autoplay>
-  <source src="music/Move_Ya.mp3" type="audio/mpeg">
-</audio>
-    
+    <body>
+        <div id="page">
+            <header>
+                <div id="banner">
+                    <img src="images/Glitch-Witch-Logo-Standing-Bex.png" alt="Glitch Witch Logo" width="63%" height="99%" />
+					<p id="description">Bex is a modern witch, always experimenting with magic and technology, dealing with high school, bullies, a new stepmother, and her band stuck in their garage phase.</p>
+                </div>
+            </header>
+            <div id="content">
+                
+                <div id="btn_container">
+                  <div>
+                    <div class="btn"><a href="pages/characters.html"><img src="images/home_page_buttons/Characters_Button.jpg"onMouseOver="this.src='images/home_page_buttons/Characters%20Hover.png'" onMouseOut="this.src='images/home_page_buttons/Characters_Button.jpg'"/></a></div>
+                  </div>
+                <div class="btn"><a href="pages/contact.html"><img src="images/home_page_buttons/Creator_Contact_Button.jpg" 
+onmouseover="this.src='images/home_page_buttons/Creator%20Contact%20Hover.png'"
+onmouseout="this.src='images/home_page_buttons/Creator_Contact_Button.jpg'" /></a></div>
+                <div class="btn"><a href="pages/episodes.html"><img src="images/home_page_buttons/Episodes_Button.jpg" onMouseOver="this.src='images/home_page_buttons/Episodes%20Hover.png'" onMouseOut="this.src='images/home_page_buttons/Episodes_Button.jpg'"></a></div>
+                <div class="btn"><a href="pages/games.html"><img src="images/home_page_buttons/Games_Button.jpg" onmouseover="this.src='images/home_page_buttons/Games%20Hover.png'"
+onmouseout="this.src='images/home_page_buttons/Games_Button.jpg'"/></a></div>
+                <div class="btn"><a href="pages/storyboards.html"><img src="images/home_page_buttons/Storyboard_Button.jpg" onmouseover="this.src='images/home_page_buttons/Storyboards%20Hover.png'"
+onmouseout="this.src='images/home_page_buttons/Storyboard_Button.jpg'"/></a></div>
+                <div class="btn"><a href="pages/the-story.html"><img src="images/home_page_buttons/The_Story_Button.jpg" onmouseover="this.src='images/home_page_buttons/The%20Story%20Hover.png'"
+onmouseout="this.src='images/home_page_buttons/The_Story_Button.jpg'"/></a></div>
+                <div class="btn"><a href="pages/videos.html"><img src="images/home_page_buttons/Videos_Button.jpg" onmouseover="this.src='images/home_page_buttons/Videos%20Hover.png'"
+onmouseout="this.src='images/home_page_buttons/Videos_Button.jpg'"></a></div>
+					</div>
+            </div>
+        </div>
     </body>
-    
 </html>
